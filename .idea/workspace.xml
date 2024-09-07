@@ -1,7 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8e08f5e9-839f-4d45-988a-8b1ad856eb8f" name="Changes" comment="" />
+    <list default="true" id="2413cc0b-2d49-4bc8-b543-1eeca44241b1" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Diplom_3.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Diplom_3.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/conftest.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/helpers/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/helpers/create_user.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/helpers/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/locators/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/locators/feed_page_locator.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/locators/forget_password_locator.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/locators/home_page_locator.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/locators/log_in_page_locator.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/locators/main_page_locator.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/locators/password_reset_locator.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/base_page.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/feed_page.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/forget_password_page.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/home_page.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/login_page.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/main_page.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/reset_password_page.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_feed_page.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_forget_password.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_home_page.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_login_page.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_main_page.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_reset_password.py" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -11,13 +42,20 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
   "associatedIndex": 4
 }]]></component>
-  <component name="ProjectId" id="2lfEdQ5I5LzoC30e2NrUeRUfSTu" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectId" id="2lkqAHXLYx1tQWFXbZL1s1TNjaT" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\landy\PycharmProjects\Diplom\Diplom_3" />
+      <recent name="C:\Users\landy\PycharmProjects\Diplom\" />
+      <recent name="C:\Users\landy\PycharmProjects\Diplom" />
+    </key>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -29,11 +67,11 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="8e08f5e9-839f-4d45-988a-8b1ad856eb8f" name="Changes" comment="" />
-      <created>1725562817254</created>
+      <changelist id="2413cc0b-2d49-4bc8-b543-1eeca44241b1" name="Changes" comment="" />
+      <created>1725734277085</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1725562817254</updated>
+      <updated>1725734277085</updated>
     </task>
     <servers />
   </component>
