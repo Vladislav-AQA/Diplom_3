@@ -18,13 +18,13 @@ class FeedPage(BasePage):
 
     @allure.step('Ожидание всплывающего окна с заказами')
     def wait_of_order_list(self):
-        self.is_element_located(FeedPageLocator.POPUP_ORDER_DETAILS_WINDOW)
+        return self.is_element_present(FeedPageLocator.POPUP_ORDER_DETAILS_WINDOW)
 
-    @allure.step('Ожидание появления ID заказа')
-    def wait_of_order_id(self, order_id):
-        self.get_text_from_element(
-            el = FeedPageLocator.ORDER_READY_ID
-        )
+    @allure.step('Получение заказа из списка заказов')
+    def get_order_from_list(self):
+        el = self.find_element(FeedPageLocator.ORDER_READY_ID)
+        order_id = el.text.strip()
+        return order_id
 
     @allure.step('Зафиксировать заказы "За все время"')
     def get_orders_all_time(self):
@@ -39,4 +39,29 @@ class FeedPage(BasePage):
     @allure.step('Переход в личный кабинет')
     def click_homepage(self):
         self.click_on_element(FeedPageLocator.HOME_PAGE)
+        self.wait_url(urls.HOME_PAGE_URL)
+        return self.get_curr_url()
+
+    @allure.step('Поиск и клик по элементу')
+    def find_and_click_order_by_id(self, order_id):
+        locator = By.XPATH, FeedPageLocator.ORDER_FEED_ITEM_BY_ID[1].format(order_id=order_id)
+        return self.click_on_element(locator)
+
+    @allure.step("Cкролл до созданного заказа в истории заказов")
+    def scroll_order_in_history(self):
+        self.scroll_into_view(FeedPageLocator.LAST_ORDER_IN_HISTORY)
+
+    @allure.step('Поиск элемента по ID')
+    def find_order_by_id(self, order_id):
+        locator = By.XPATH, f"//p[contains(@class, 'text_type_digits-default') and text()='#0{order_id}']"
+        el = self.find_element(locator)
+        assert el, f"Заказ с ID {order_id} не найден."
+
+    @allure.step('Ожидание заказа в статусе "В работе"')
+    def wait_for_orders_id(self, expected_order_id):
+        self.wait_for_text_to_be(
+            locator = FeedPageLocator.ORDER_READY_ID,
+            expected_text = f'0{expected_order_id}',
+            timeout = 10
+        )
 

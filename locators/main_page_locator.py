@@ -12,7 +12,7 @@ class MainPageLocator:
     BURGER_INGREDIENT_SAUCE = By.XPATH, "//img[@alt='Соус Spicy-X']"
     POPUP_INGREDIENT_DETAILS_WINDOW = By.CLASS_NAME, "Modal_modal__container__Wo2l_"
     CLOSE_BUTTON = By.XPATH, "//button[contains(@class, 'Modal_modal__close')]"
-    BURGER_CONSTRUCTOR = By.XPATH, "//ul[contains(@class, 'BurgerConstructor_basket__list')]"
+    BURGER_CONSTRUCTOR_BASKET = By.XPATH, "//ul[contains(@class, 'BurgerConstructor_basket__list')]"
     COUNTER_BUN = By.CSS_SELECTOR, "[class='counter_counter__num__3nue1']"
     POPUP_ORDER_ID_WINDOW = By.CLASS_NAME, "Modal_modal__container__Wo2l_"
     ORDER_ID_TITLE = By.CSS_SELECTOR, "h2.Modal_modal__title_shadow__3ikwq.text_type_digits-large"

@@ -10,8 +10,8 @@ class ResetPasswordPage(BasePage):
 
     @allure.step("Ожидание поля ввода пароля")
     def wait_for_password_input(self):
-        return self.is_visibility_element(PasswordResetLocator.PASSWORD_INPUT_BEFORE)
+        return self.is_element_present(PasswordResetLocator.PASSWORD_INPUT_BEFORE)
 
     @allure.step('проверка активации кнопки "показать/скрыть пароль"')
     def is_password_field_active(self):
-        return self.is_visibility_element(PasswordResetLocator.PASSWORD_INPUT_AFTER)
+        return self.is_element_present(PasswordResetLocator.PASSWORD_INPUT_AFTER)

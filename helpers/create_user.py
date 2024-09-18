@@ -19,8 +19,8 @@ def create_password():
     return password
 
 def create_user():
-    user = {'name': create_name(), 'email': create_email(), 'password': create_password()}
-    return user
+    user_data = {'name': create_name(), 'email': create_email(), 'password': create_password()}
+    return user_data
 
 def register_user():
     user = create_user()
@@ -32,7 +32,9 @@ def register_user():
 
     }
     headers = {'Content-Type': 'application/json'}
-    register_response = requests.post(register, json=payload, headers=headers)
+    response_register = requests.post(register, json=payload, headers=headers)
+
+    return user, response_register
 
 def delete_user(access_token):
     delete = urls.DELETE_USER
@@ -40,6 +42,6 @@ def delete_user(access_token):
         'Accept': 'application/json',
         'Authorization': f'{access_token}'
     }
-    delete_response = requests.delete(delete, headers=headers)
+    response_delete = requests.delete(delete, headers=headers)
 
 

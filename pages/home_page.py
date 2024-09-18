@@ -9,13 +9,13 @@ class HomePage(BasePage):
     def click_order_history(self):
         self.click_on_element(HomePageLocators.ORDER_HISTORY_LINK)
         self.wait_url(urls.ACCOUNT_ORDER_HISTORY_URL)
-        return self.get_now_url()
+        return self.get_curr_url()
 
     @allure.step('Клик на кнопку "Выход"')
     def click_button_logout(self):
         self.click_on_element(HomePageLocators.EXIT_BUTTON)
         self.wait_url(urls.LOGIN_URL)
-        return self.get_url()
+        return self.get_curr_url()
 
 
 

@@ -8,10 +8,11 @@ class TestResetPasswordPage:
 
 
     @allure.description('Показать/Скрыть пароль')
-    def test_password_field_highlighted_after_toggle(self):
+    def test_password_field_highlighted_after_toggle(self, forget_password_page, reset_password_page):
         email = 'test@yandex.ru'
-        ForgetPasswordPage.set_email(email)
-        ForgetPasswordPage.click_on_reset_password()
-        ResetPasswordPage.wait_for_password_input()
-        ResetPasswordPage.toggle_password_visibility()
-        assert ResetPasswordPage.is_password_field_active()
+        forget_password_page.set_email(email)
+        forget_password_page.click_on_reset_password()
+        reset_password_page.wait_for_password_input()
+        reset_password_page.toggle_password_visibility()
+
+        assert reset_password_page.is_password_field_active()
