@@ -27,8 +27,8 @@ class BasePage:
 
     @allure.step("Получить текст элемента")
     def get_text_from_element(self, locator):
-        el = self.find_element(locator)
-        return el.text
+        element = self.find_element(locator)
+        return element.text
 
 
     @allure.step("Ввести текст")

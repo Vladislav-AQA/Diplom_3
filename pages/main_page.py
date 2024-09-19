@@ -37,7 +37,9 @@ class MainPage(BasePage):
 
     @allure.step('Проверка ингредиента')
     def check_number_ingredient(self):
-        self.get_text_from_element(MainPageLocator.COUNTER_BUN)
+        return self.get_text_from_element(MainPageLocator.COUNTER_BUN)
+
+
 
     @allure.step('Добавить соус в заказ')
     def drag_n_drop_sauce(self):
